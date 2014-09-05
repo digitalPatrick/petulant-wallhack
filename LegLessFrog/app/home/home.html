@@ -1,16 +1,20 @@
-﻿<div data-ng-controller="home as vm">
+﻿<link href="../../assets/css/animate.css" rel="stylesheet" />
+
+<div data-ng-controller="home as vm">
 
     <div id="wrapper">
         <!-- layer SLIDER -->
         <div data-ng-include="'../../app/layout/layerslider.html'"></div>
         <!-- /layer SLIDER -->
+
         <!-- Banner -->
-        <div class="container">
-            <a class="block clearfix" href="#purchase" target="_blank" rel="nofollow">
-                <img class="img-responsive" src="assets/images/big_banner_grey.png" alt="">
-            </a>
-        </div>
+            <div class="container">
+                <a class="block clearfix" href="#purchase" target="_blank" rel="nofollow">
+                    <img class="img-responsive" src="assets/images/big_banner_grey.png" alt="" data-animation="rotateInDownLeft">
+                </a>
+            </div>
         <!-- /Banner -->
+
         <!-- POPULAR -->
         <section>
             <div class="container">
@@ -22,7 +26,7 @@
                         <div class="owl-featured-item">
                             <a class="figure" href="page-article.html">
                                 <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/1.jpg" width="230" />
+                                <img class="appear-animation" alt="" src="assets/images/demo/fashion/thumb/1.jpg" width="230" data-animation="fadeInDown" />
                             </a>
                             <div class="owl-featured-detail">
                                 <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
@@ -464,6 +468,7 @@
             </div>
         </section>
         <!-- /POPULAR -->
+
         <!-- SECTION -->
         <section class="alternate">
             <div class="container">
@@ -503,6 +508,5 @@
     </div>
     
 </div>
-
 
 <script src="../../assets/js/scripts.js"></script>

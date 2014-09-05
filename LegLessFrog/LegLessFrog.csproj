@@ -787,7 +787,6 @@
     <Content Include="assets\images\shop_banner.png" />
     <Content Include="assets\js\contact.js" />
     <Content Include="assets\js\countdown.js" />
-    <Content Include="assets\js\revolution_slider.js" />
     <Content Include="assets\js\scripts.js" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-theme.css" />
     <Content Include="assets\plugins\bootstrap\css\bootstrap-theme.min.css" />
