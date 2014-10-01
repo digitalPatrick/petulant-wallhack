@@ -1,220 +1,37 @@
-﻿<link href="../../assets/css/animate.css" rel="stylesheet" />
-
-<div data-ng-controller="home as vm">
+﻿<div data-ng-controller="home as vm">
 
     <div id="wrapper">
-        <!-- layer SLIDER -->
-        <div data-ng-include="'../../app/layout/layerslider.html'"></div>
-        <!-- /layer SLIDER -->
+
+        <layer-slider>
+
+        </layer-slider>
+
 
         <!-- Banner -->
-            <div class="container">
-                <a class="block clearfix" href="#purchase" target="_blank" rel="nofollow">
-                    <img class="img-responsive" src="assets/images/big_banner_grey.png" alt="" data-animation="rotateInDownLeft">
-                </a>
-            </div>
+            <div data-ng-include="'/app/layout/paidcallout.html'"></div>
         <!-- /Banner -->
 
         <!-- POPULAR -->
         <section>
             <div class="container">
 
-                <!-- FEATURED PRODUCTS -->
-                <h2 class="owl-featured"><strong>Hot</strong> News</h2>
-                <div class="owl-carousel featured" data-plugin-options='{"itemsDesktop":[1199,4], "itemsDesktopSmall":[980,3], "itemsTablet":[684,2], "itemsMobile":[490,1], "singleItem": false, "stopOnHover":false, "autoPlay":false, "autoHeight": false, "navigation": true, "pagination": false}'>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img class="appear-animation" alt="" src="assets/images/demo/fashion/thumb/1.jpg" width="230" data-animation="fadeInDown" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/2.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/3.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/4.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/5.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/6.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/7.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/8.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /FEATURED PRODUCTS -->
+                <featured-realtors>
+
+                </featured-realtors>
 
                 <hr class="half-margins invisible" />
 
                 <!-- FEATURED PRODUCTS -->
-                <h2 class="owl-featured"><strong>Today</strong> Most Readed</h2>
-                <div class="owl-carousel featured" data-plugin-options='{"itemsDesktop":[1199,4], "itemsDesktopSmall":[980,3], "itemsTablet":[684,2], "itemsMobile":[490,1], "singleItem": false, "stopOnHover":false, "autoPlay":false, "autoHeight": false, "navigation": true, "pagination": false}'>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/3.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/6.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/7.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/8.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/1.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/2.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/4.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="owl-featured-item">
-                            <a class="figure" href="page-article.html">
-                                <span><i class="fa fa-plus"></i></span>
-                                <img alt="" src="assets/images/demo/fashion/thumb/5.jpg" width="230" />
-                            </a>
-                            <div class="owl-featured-detail">
-                                <a class="featured-title" href="page-article.html">Cras justo odio, dapibus ac facilisis in, egestas eget quam. </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <latest-listings>
+
+                </latest-listings>
                 <!-- /FEATURED PRODUCTS -->
 
                 <hr class="half-margins invisible" />
 
                 <!-- Banner -->
-                <a class="block clearfix" href="#purchase" target="_blank" rel="nofollow">
-                    <img class="img-responsive" src="assets/images/big_banner.png" alt="">
-                </a><!-- /Banner -->
+                <div data-ng-include="'/app/layout/paidcallout.html'"></div>
+                <!-- /Banner -->
 
                 <hr class="half-margins invisible" />
 
@@ -223,7 +40,7 @@
                     <div class="col-md-9">
 
                         <!-- More News -->
-                        <h4><strong>Politics</strong> News</h4>
+                        <h4><strong>Apartments</strong> Near You</h4>
                         <div class="row">
 
                             <div class="col-sm-4 col-md-4">
@@ -266,7 +83,7 @@
                         <hr class="half-margins invisible" />
 
                         <!-- More News -->
-                        <h4><strong>Science</strong> News</h4>
+                        <h4><strong>Latest</strong> News</h4>
                         <div class="row">
 
                             <div class="col-sm-4 col-md-4">
@@ -440,20 +257,8 @@
                         <!-- FACEBOOK -->
                         <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fstepofweb&amp;width=263&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false" style="border:none; overflow:hidden; width:263px; height:258px;"></iframe>
 
-                        <a href="#" class="social fa fa-facebook"></a>
-                        <a href="#" class="social fa fa-twitter"></a>
-                        <a href="#" class="social fa fa-google-plus"></a>
-                        <a href="#" class="social fa fa-linkedin"></a>
-                        <a href="#" class="social fa fa-pinterest"></a>
-                        <a href="#" class="social fa fa-youtube-square"></a>
-                        <!--
-                    <a href="#" class="social fa fa-vimeo-square"></a>
-                    <a href="#" class="social fa fa-flickr"></a>
-                    <a href="#" class="social fa fa-skype"></a>
-                    <a href="#" class="social fa fa-rss"></a>
-                    <a href="#" class="social fa fa-envelope"></a>
-                    <a href="#" class="social default fa fa-cog"></a>
-                    -->
+                        <social-networks></social-networks>
+
 
                         <hr class="half-margins invisible" />
 
@@ -462,51 +267,15 @@
 
                 </div>
 
-
-
-
             </div>
         </section>
         <!-- /POPULAR -->
 
-        <!-- SECTION -->
-        <section class="alternate">
-            <div class="container">
+        <footer-navigation>
 
-                <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <h3><strong>Amazing</strong> tools to build <strong>awesome</strong> websites</h3>
-                        <ul class="list-icon spaced check-circle">
-                            <li>Fully responsive so your content will always look good on any device</li>
-                            <li>Cool sliders give you the opportunity to showcase your content</li>
-                            <li>Advanced template options to easily customize your website</li>
-                            <li>Multiple layout options for home pages, portfolio, shop and blog</li>
-                            <li>Incredible shortcodes for easy customization</li>
-                            <li>Free lifetime update because we care about your website as much as you</li>
-                        </ul>
-
-                        <div class="margin-top20">
-                            <!-- buttons -->
-                            <a href="#purchase" target="_blank" rel="nofollow" class="btn btn-primary">PURCHASE EPONA</a>
-                            <a href="#" class="btn btn-default">PRICING</a>
-                        </div><!-- /buttons -->
-
-                    </div>
-                    <div class="col-md-6 col-sm-6">
-                        <!-- right image -->
-                        <img class="img-responsive appear-animation" data-animation="fadeIn" src="assets/images/demo/laptop.png" alt="" />
-                    </div><!-- /right image -->
-                </div>
-
-            </div>
-        </section>
-        <!-- /SECTION -->
-
-        <footnav></footnav>
+        </footer-navigation>
 
         <a href="#" id="toTop"></a>
     </div>
     
 </div>
-
-<script src="../../assets/js/scripts.js"></script>

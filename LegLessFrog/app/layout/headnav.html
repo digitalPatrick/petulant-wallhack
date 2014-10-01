@@ -5,25 +5,24 @@
         <header id="topNav">
             <div class="container">
 
-                <!-- Logo -->
-                <a class="logo" href="index.html">
-                    <img src="assets/images/logo.png" height="50" alt="" />
-                </a>
-
                 <!-- Mobile Menu Button -->
                 <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
 
-                <!-- /Search -->
                 <!-- Top Nav -->
                 <div class="navbar-collapse nav-main-collapse collapse">
                     <nav class="nav-main">
                         <ul id="topMain" class="nav nav-pills nav-main">
-                            <li class="mega-menu" data-ng-class="vm.isCurrent(r)" data-ng-repeat="r in vm.navRoutes">
-                                <a href="{{r.url}}">
-                                    {{r.config.settings.display}}
-                                    <span>{{r.config.settings.content}}</span>
+                            <li class="mega-menu">
+                                <a href="/" class="active">Home
+                                    <span>Welcome</span>
+                                </a>
+                            </li>
+                            <li class="mega-menu">
+                                <a href="/privacy">
+                                    Privacy
+                                    <span>Your Data</span>
                                 </a>
                             </li>
                         </ul>

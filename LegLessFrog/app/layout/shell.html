@@ -1,19 +1,15 @@
 ﻿<div data-ng-controller="shell as vm">
-    <!--<header class="clearfix">
-        <div data-ng-include="'/app/layout/topnav.html'"></div>
-    </header>-->
-
+   
     <div id="header" class="sticky">
-        <div data-ng-include="'/app/layout/topbarhead.html'"></div>
-        <div data-ng-include="'/app/layout/headnav.html'"></div>
+        <top-nav></top-nav>
     </div>
+        
+        <main-nav></main-nav>
 
+    
 
-        <div data-ng-show="vm.isBusy" class="page-splash dissolve-animation">
-            <div data-cc-spinner="vm.spinnerOptions"></div>
-            <div class="page-splash-message page-splash-message-subtle">{{vm.busyMessage}}</div>
-        </div>
+    <div data-ng-view id="ng-view" class="slide-animation"></div>
 
-        <div data-ng-view class="animated fadeInDown"></div>
+    <a href="#" id="toTop"></a>
 
 </div>

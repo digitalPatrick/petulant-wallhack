@@ -26,7 +26,6 @@
                     templateUrl: 'app/home/home.html',
                     title: 'home',
                     settings: {
-                        nav: 1,
                         display: 'Home',
                         content: 'Welcome'
                     }
@@ -36,9 +35,6 @@
                 config: {
                     title: 'privacy',
                     templateUrl: 'app/privacy/page-privacy.html',
-                    settings: {
-                        content: '<i class="fa fa-lock"></i> Admin'
-                    }
                 }
             }
         ];

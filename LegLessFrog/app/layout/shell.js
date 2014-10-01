@@ -3,9 +3,9 @@
     
     var controllerId = 'shell';
     angular.module('app').controller(controllerId,
-        ['$rootScope', 'common', 'config', shell]);
+        ['$rootScope', 'common', 'config', 'angularLoad', shell]);
 
-    function shell($rootScope, common, config) {
+    function shell($rootScope, common, config, angularLoad) {
         var vm = this;
         var logSuccess = common.logger.getLogFn(controllerId, 'success');
         var events = config.events;
@@ -22,6 +22,7 @@
             color: '#F58A00'
         };
 
+        angularLoad.loadScript('../../Scripts/scripts.js')
         activate();
 
         function activate() {

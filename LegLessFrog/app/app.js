@@ -12,7 +12,8 @@
         'common.bootstrap', // bootstrap dialog wrapper functions
 
         // 3rd Party Modules
-        'ui.bootstrap'      // ui-bootstrap (ex: carousel, pagination, dialog)
+        'ui.bootstrap',      // ui-bootstrap (ex: carousel, pagination, dialog)
+        'angularLoad'        // load js and css files dynamically
     ]);
     
     // Handle routing errors and success events
